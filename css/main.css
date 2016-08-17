@@ -1,0 +1,230 @@
+html {
+    padding: 17px;
+    background-color: rgba(255, 175, 75, 1);
+    background: @include filter-gradient(#ffaf4b, #ff920a, horizontal);
+    background: @include background-image(linear-gradient(left, rgba(255, 175, 75, 1) 0%, rgba(255, 163, 47, 0.79) 21%, rgba(255, 146, 10, 0.73) 49%, rgba(255, 146, 10, 0.62) 100%));
+}
+
+body {
+    background-color: transparent;
+}
+
+.center {
+    border: 2px solid #593902;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.bloc {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+hr.soften {
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+    border: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.red {
+    color: red;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin: 0 10px 0 10px;
+}
+
+
+/**
+   CSS pour les mots trouvés dans la fonction search 
+**/
+
+.cssTextChercher {
+    background: yellow;
+}
+
+
+/**
+   paneRight quick launch button
+**/
+
+.paneRight button {
+    margin-bottom: 6px;
+}
+
+
+/**
+   stock
+**/
+
+pre {
+    height: 620px;
+}
+
+
+/**
+    map'it
+**/
+
+#mapid {
+    height: 580px;
+}
+
+#mapit input {
+    width: 180px;
+    margin-right: 10px;
+}
+
+#mapit .templateIOT input {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.marker-menu {
+    background: #eee;
+    border: 1px solid #fff;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.draggable-marker {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tile.tile-wide,
+.tile.tile-double {
+    height: 150px;
+    width: 310px;
+}
+
+.tile.tile-green {
+    background-color: #393;
+}
+
+.tile {
+    display: block;
+    cursor: pointer;
+    -webkit-perspective: 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .2s;
+    float: left;
+    min-width: 75px;
+    min-height: 75px;
+    text-align: center;
+    opacity: .75;
+    background-color: #2e8bcc;
+    z-index: 1;
+    border: 4px #fff solid;
+    color: #fff;
+}
+
+
+/**
+   accounting
+**/
+
+.Scontainer-fluid {
+    background: n;
+    text-align: auto;
+    width: 150 px;
+}
+
+.S btn btn-primary {
+    width: 100px;
+    height: 80px;
+}
+
+.tableSale {
+    column-width: 150px;
+}
+
+.menuS {
+    background-color: ivory;
+    width: 150px;
+    font-size: 18px;
+    text-align: center;
+    table-layout: auto;
+    column-width: auto;
+}
+
+
+/*.form-group0 {
+    background: LightBlue;
+    text-align: auto;
+    width:50 px;
+}*/
+
+.form-group1 {
+    background: LightBlue;
+    text-align: center;
+}
+
+
+/**
+   sale
+**/
+
+.navbar-form2 {
+    text-align: center;
+}
+
+.btn-excel {
+    width: 50px;
+    height: 30px;
+    background-color: lightgreen;
+}
+
+.btn-pdf {
+    width: 50px;
+    height: 30px;
+    background-color: lightblue;
+}
+
+#S1 {
+    width: 190px;
+    height: 190px;
+    background-color: yellowgreen;
+}
+
+#S2 {
+    width: 190px;
+    height: 190px;
+    background-color: crimson;
+}
+
+#S3 {
+    width: 190px;
+    height: 190px;
+    background-color: lightskyblue;
+}
+
+#S4 {
+    width: 190px;
+    height: 190px;
+    background-color: deeppink;
+}
+
+#S5 {
+    width: 190px;
+    height: 190px;
+    background-color: forestgreen;
+}
+
+.BS {
+    align-content: center;
+}

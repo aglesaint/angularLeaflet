@@ -1,0 +1,34 @@
+{
+    "fields": [
+        {
+            "name": "stockId",
+            "label": "id",
+            "type": "text",
+            "required": true,
+            "placeholder": "your stock id",
+            "data": ""
+}
+    , {
+            "name": "nameId",
+            "label": "name",
+            "type": "text",
+            "required": true,
+            "placeholder": "your stock name",
+            "data": ""
+}, {
+            "name": "qteId",
+            "label": "quantity",
+            "type": "text",
+            "required": true,
+            "placeholder": "wished quantity",
+            "data": ""
+}, {
+            "name": "commentId",
+            "label": "comments",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "your comment here",
+            "data": ""
+}
+]
+}

@@ -1,0 +1,37 @@
+<form name="stockForm" ng-controller="StockDescrController" ng-submit="submitForm()" novalidate class="center">
+    <h3>template stock with json description</h3>
+    <section>
+        <div ng-repeat="item in nav.fields">
+            <ng-form name="form">
+                <!-- TEXT FIELDS -->
+                <p>
+                    <fieldset class="form-group col-xs-3" ng-if="item.type=='text'">
+                        <label for="{{item.name}}">{{item.label}}</label><span class="red" ng-show="{{item.required}}"> *</span> :
+                        <!--    <input ng-model="stock[item.name]" class="form-control" placeholder="{{item.placeholder}}" required>  -->
+                        <input type="{{ item.type }}" dynamic-name="item.name" id="{{item.name}}" data-ng-model="item.data" class="form-control" placeholder="{{item.placeholder}}" required/> </fieldset>
+                </p>
+                <!-- TEXTAREA FIELDS -->
+                <p>
+                    <fieldset class="form-group col-xs-3" ng-if="item.type=='textarea'" style="margin-top=10px">
+                        <label for="{{item.name}}">{{item.label}}</label><span class="red" ng-show="{{item.required}}"> *</span> :
+                        <textarea dynamic-name="item.name" id="{{item.name}}" data-ng-model="item.data" class="form-control" rows="3" placeholder="{{item.placeholder}}" required></textarea>
+                    </fieldset>
+                </p>
+            </ng-form>
+        </div>
+        <!-- // repeat -->
+        <div>
+            <p>
+                <button ng-disabled="stockForm.$invalid" type="submit" id="submit" class="btn btn-primary">Go !</button>
+                <button type="reset" class="btn btn-default">Cancel</button>
+            </p>
+        </div>
+        <button type="button" value="JSON" ng-click="box4=!box4" class="btn btn-filterPriority btn-info">See JSON document</button>
+        <div data-slide-toggle="box4" data-start-shown="false">
+            <div style="text-align:left"><pre><code>
+                {{nav|json}}
+                </code></pre></div>
+        </div>
+        <button type="button" ng-click="delete()" id="delete" class="btn btn-danger">Delete JSON document</button>
+    </section>
+</form>

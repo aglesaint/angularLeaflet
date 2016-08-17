@@ -1,0 +1,16 @@
+<div class="templateIOT">
+    <h3>{{id}}</h3>
+    <fieldset class="form-group">
+        <label for="typeName">name</label>
+        <input type="text" name="typeName" ng-model="typeName" class="form-control" placeholder="name here" /> </fieldset>
+    <fieldset class="form-group">
+        <label for="typeName">Building</label>
+        <input type="text" name="typeBuild" ng-model="typeBuild" class="form-control" placeholder="building here" /> </fieldset>
+    <fieldset class="form-group">
+        <label for="typeName">Room</label>
+        <input type="text" name="typeRoom" ng-model="typeRoom" class="form-control" placeholder="room here" /> </fieldset>
+    <!--    <input type='button' value='save' ng-click="$emit('AddMarker')" class="btn btn-primary" />-->
+    <input type='button' value='save' ng-click='saveMarker()' class="btn btn-primary" />
+    <input type='button' value='delete' ng-click='removeMarker(id)' class="btn btn-danger" />
+    <!--    <input type='button' value='delete' ng-click="$emit('RemoveMarker')" class="btn btn-danger" /> -->
+</div>

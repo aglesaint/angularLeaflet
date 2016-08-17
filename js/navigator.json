@@ -1,0 +1,25 @@
+[
+
+
+	{
+		"name": "Home",
+		"url": "#tab1",
+		"class": "{'active':menu.tabSelected=='#tab1'}",
+		"show": "menu.tabSelected=='#tab1'",
+		"template": "indexMain.html"
+}
+    , {
+		"name": "Stock",
+		"url": "#tab3",
+		"class": "{'active':menu.tabSelected=='#tab3'}",
+		"show": "menu.tabSelected=='#tab3'",
+		"template": "stock.html"
+}
+    , {
+		"name": "Leaflet",
+		"url": "#tab5",
+		"class": "{'active':menu.tabSelected=='#tab5'}",
+		"show": "menu.tabSelected=='#tab5'",
+		"template": "myLeaflet.html"
+}
+]

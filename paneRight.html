@@ -1,0 +1,9 @@
+<form ng-controller="GetJsonInfoController" novalidate>
+    <section ng-controller="RefreshController" data-ng-init="getJson()">
+        {{message}}
+        <div ng-repeat="field in myjson.fields | limitTo:1">
+            <h1>{{field.data}}</h1>
+            <img ng-src='images/file.png' ng-click="openFile(field.data)" style="cursor: pointer;">
+        </div>
+    </section>
+</form>
