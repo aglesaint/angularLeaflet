@@ -2,120 +2,121 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>sandBox angular</title>
-    <meta name="description" content="sandBox">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <!--  
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>sandBox angular</title>
+	<meta name="description" content="sandBox">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<!--  
        css
     -->
-    <link rel="stylesheet" href="bower_components/metro-bootstrap/dist/css/metro-bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="images/font-awesome.css">
+	<link rel="stylesheet" href="bower_components/metro-bootstrap/dist/css/metro-bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="images/font-awesome.css">
 </head>
 
 <body ng-app="myConnectit">
-    <section class="tab" ng-controller="TabPanelController as menu" ng-click="menu.tabChange($event)">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <!-- menu horizontal repeat json -->
-                <!-- =========================== -->
-                <div class="navbar-header"> <a class="navbar-brand" href="blank.html">SandBox</a> </div>
-                <ul class="nav navbar-nav">
-                    <li ng-repeat="item in menu.nav"> <a href="{{item.url}}">{{item.name}}</a> </li>
-                </ul>
-                <!-- search button -->
-                <!-- ============= -->
-                <div class="col-sm-3 col-md-3 pull-right">
-                    <form class="navbar-form" role="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- main -->
-        <!-- ===== -->
-        <div class="row">
-            <!-- left pane -->
-            <div class="col-lg-2">
-                <div class="panel panel-info">
-                    <div class="panel-heading"> Some informations </div>
-                    <div class="panel-body bloc">
-                        <h6>btn bootstrap search</h6>
-                        <h6>mettre à jour le json pour le lien de droite (include)</h6>
-                        <h6>récupère le localstorage et affiche un lien</h6>
-                        <h6>angular boostrap tooltip on markers</h6>
-                        <h6>desactivate wheel to map</h6>
-                        <h6>cliquer / glisser du lien pour l'ouvrir</h6>
-                        <h6>http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html</h6>
-                        <h6>http://leafletjs.com/</h6>
-                        <h6>http://tombatossals.github.io/angular-leaflet-directive/examples/0000-viewer.html#/basic/first-example</h6>
-                        <h6>https://github.com/tombatossals/angular-leaflet-directive/blob/master/examples/0501-markers-events-add-example.html</h6>
-                        <h6>https://talkslab.github.io/metro-bootstrap/components.html</h6>
-                    </div>
-                </div>
-            </div>
-            <!-- center pane -->
-            <div class="col-lg-8" style="text-align:center">
-                <div ng-repeat="item in menu.nav" class="ng-hide" ng-show="{{item.show}}">
-                    <div ng-include="item.template"></div>
-                </div>
-            </div>
-            <!-- right pane -->
-            <div class="col-lg-2">
+	<section class="tab" ng-controller="TabPanelController as menu" ng-click="menu.tabChange($event)">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- menu horizontal repeat json -->
+				<!-- =========================== -->
+				<div class="navbar-header"> <a class="navbar-brand" href="blank.html">SandBox</a> </div>
+				<ul class="nav navbar-nav">
+					<li ng-repeat="item in menu.nav"> <a href="{{item.url}}">{{item.name}}</a> </li>
+				</ul>
+				<!-- search button -->
+				<!-- ============= -->
+				<div class="col-sm-3 col-md-3 pull-right">
+					<form class="navbar-form" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+							<div class="input-group-btn">
+								<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- main -->
+		<!-- ===== -->
+		<div class="row">
+			<!-- left pane -->
+			<div class="col-lg-2">
+				<div class="panel panel-info">
+					<div class="panel-heading"> Some informations </div>
+					<div class="panel-body bloc">
+						<h6>btn bootstrap search</h6>
+						<h6>mettre à jour le json pour le lien de droite (include)</h6>
+						<h6>récupère le localstorage et affiche un lien</h6>
+						<h6>angular boostrap tooltip on markers</h6>
+						<h6>desactivate wheel to map</h6>
+						<h6>cliquer / glisser du lien pour l'ouvrir</h6>
+						<h6>http://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html</h6>
+						<h6>http://leafletjs.com/</h6>
+						<h6>http://tombatossals.github.io/angular-leaflet-directive/examples/0000-viewer.html#/basic/first-example</h6>
+						<h6>https://github.com/tombatossals/angular-leaflet-directive/blob/master/examples/0501-markers-events-add-example.html</h6>
+						<h6>https://talkslab.github.io/metro-bootstrap/components.html</h6>
+					</div>
+				</div>
+			</div>
+			<!-- center pane -->
+			<div class="col-lg-8" style="text-align:center">
+				<div ng-repeat="item in menu.nav" class="ng-hide" ng-show="{{item.show}}">
+					<div ng-include="item.template"></div>
+				</div>
+			</div>
+			<!-- right pane -->
+			<div class="col-lg-2">
 
-                <div class="panel panel-success">
-                    <div class="panel-heading"> Technical informations </div>
-                    <div class="panel-body">
-                        <a href="#">routers <span class="badge">30</span></a>
-                        <br> <a href="#">PCs  <span class="badge">10</span></a>
-                        <br> <a href="#">network adapters <span class="badge">2</span></a>
+				<div class="panel panel-success">
+					<div class="panel-heading"> Technical informations </div>
+					<div class="panel-body">
+						<a href="#">routers <span class="badge">30</span></a>
+						<br> <a href="#">PCs  <span class="badge">10</span></a>
+						<br> <a href="#">network adapters <span class="badge">2</span></a>
 
-                    </div>
-                </div>
+					</div>
+				</div>
 
-                <div class="panel panel-warning">
-                    <div class="panel-heading"> Last documents </div>
-                    <div class="panel-body">
-                        <div ng-include="'paneRight.html'"></div>
-                    </div>
-                </div>
-                <div class="panel panel-primary">
-                    <div class="panel-heading"> Quick launch </div>
-                    <div class="panel-body center-block btn-group-vertical paneRight">
-                        <button class="btn btn-primary" btn-lg>Scan</button>
-                        <button class="btn btn-success" btn-lg>Sniffer</button>
-                        <button class="btn btn-info" btn-lg>Daily log</button>
-                        <button class="btn btn-warning" btn-lg>GMAO</button>
-                        <button class="btn btn-danger" btn-lg>Data import</button>
-                    </div>
-                </div>
+				<div class="panel panel-warning">
+					<div class="panel-heading"> Last documents </div>
+					<div class="panel-body">
+						<div ng-include="'paneRight.html'"></div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading"> Quick launch </div>
+					<div class="panel-body center-block btn-group-vertical paneRight">
+						<button class="btn btn-primary" btn-lg>Scan</button>
+						<button class="btn btn-success" btn-lg>Sniffer</button>
+						<button class="btn btn-info" btn-lg>Daily log</button>
+						<button class="btn btn-warning" btn-lg>GMAO</button>
+						<button class="btn btn-danger" btn-lg>Data import</button>
+					</div>
+				</div>
 
-            </div>
-        </div>
-    </section>
-    <!--  
+			</div>
+		</div>
+	</section>
+	<!--  
         scripts
     -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/leaflet/dist/leaflet.js"></script>
-    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/leaflet/dist/leaflet.js"></script>
+	<script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="js/app.js"></script>
-    <script src="js/factories.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/appLeaflet.js"></script>
+	<script src="js/factories.js"></script>
 </body>
 
 </html>
