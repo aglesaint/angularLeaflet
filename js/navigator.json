@@ -21,5 +21,11 @@
 		"class": "{'active':menu.tabSelected=='#tab5'}",
 		"show": "menu.tabSelected=='#tab5'",
 		"template": "myLeaflet.html"
+}, {
+		"name": "D3JS",
+		"url": "#tab6",
+		"class": "{'active':menu.tabSelected=='#tab6'}",
+		"show": "menu.tabSelected=='#tab6'",
+		"template": "d3js.html"
 }
 ]

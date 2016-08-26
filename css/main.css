@@ -74,6 +74,22 @@ pre {
 	height: 620px;
 }
 
+/
+/**
+   d3js
+**/
+
+.links line {
+	stroke: #3DAD09;
+	stroke-opacity: 0.9;
+	stroke-width: 3;
+}
+
+.nodes circle {
+	stroke: #9E90D4;
+	stroke-width: 1px;
+}
+
 
 /**
     map'it

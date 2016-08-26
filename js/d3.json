@@ -1,0 +1,74 @@
+{
+	"nodes": [
+		{
+			"id": "Lan",
+			"group": 1
+		},
+		{
+			"id": "Guillaume",
+			"group": 1
+		},
+		{
+			"id": "Arnaud",
+			"group": 2
+		},
+		{
+			"id": "Catherine",
+			"group": 2
+		},
+		{
+			"id": "Christelle",
+			"group": 3
+		},
+		{
+			"id": "Sebastien",
+			"group": 3
+		},
+		{
+			"id": "Sophie",
+			"group": 4
+		}
+  ],
+	"links": [
+		{
+			"source": "Lan",
+			"target": "Sophie",
+			"value": 1
+		},
+		{
+			"source": "Guillaume",
+			"target": "Arnaud",
+			"value": 2
+		},
+		{
+			"source": "Catherine",
+			"target": "Sebastien",
+			"value": 3
+		},
+		{
+			"source": "Christelle",
+			"target": "Sophie",
+			"value": 4
+		},
+		{
+			"source": "Sebastien",
+			"target": "Lan",
+			"value": 1
+		},
+		{
+			"source": "Sophie",
+			"target": "Guillaume",
+			"value": 1
+		},
+		{
+			"source": "Christelle",
+			"target": "Arnaud",
+			"value": 1
+		},
+		{
+			"source": "Catherine",
+			"target": "Arnaud",
+			"value": 1
+		}
+  ]
+}

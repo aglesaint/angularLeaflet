@@ -66,7 +66,7 @@
 				</div>
 			</div>
 			<!-- center pane -->
-			<div class="col-lg-8" style="text-align:center">
+			<div class="col-lg-8" style="text-align:center; margin-bottom:10px">
 				<div ng-repeat="item in menu.nav" class="ng-hide" ng-show="{{item.show}}">
 					<div ng-include="item.template"></div>
 				</div>
@@ -113,6 +113,7 @@
 	<script src="bower_components/leaflet/dist/leaflet.js"></script>
 	<script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/d3/d3.min.js"></script>
 
 	<script src="js/app.js"></script>
 	<script src="js/appLeaflet.js"></script>
